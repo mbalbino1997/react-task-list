@@ -6,7 +6,7 @@ function App() {
   const completedTasks = tasks.filter(task => task.state === "completed");
   return (
     <>
-      <h1>Task Manager</h1>
+      <h1 style={{ backgroundColor: 'aqua', marginTop: '20px', marginBottom: '20px' }}>Task Manager</h1>
       <strong>Current Tasks({currentTasks.length})</strong>
       <ul>
         {currentTasks.map(el => (
@@ -17,6 +17,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <hr />
       <strong>Completed Tasks({completedTasks.length})</strong>
       <ul>
         {completedTasks.map(el => (
