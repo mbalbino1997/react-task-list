@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <h1>Task Manager</h1>
-      <strong>Current Tasks(4)</strong>
+      <strong>Current Tasks({currentTasks.length})</strong>
       <ul>
         {currentTasks.map(el => (
           <li key={el.id}>
@@ -17,7 +17,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <strong>Completed Tasks(6)</strong>
+      <strong>Completed Tasks({completedTasks.length})</strong>
       <ul>
         {completedTasks.map(el => (
           <li key={el.id}>
