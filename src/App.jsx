@@ -1,4 +1,3 @@
-import './App.css'
 import { tasks } from './assets/tasks'
 
 function App() {
